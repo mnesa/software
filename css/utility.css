@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+:root{
+    --primery-color: #4ac4f3;
+    --ash-color: #858585;
+    --white-color: #ffffff;
+    --dark-color:#202942;
+    --light-color: #edf5ff;
+    --font-family-base: "Heebo", sans-serif; 
+    --border-radius: 10px;
+    --shadow: 0 0 10px #200b0b;
+    --card-shadow: 0 0 20px #eee;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-base);
+  line-height: 1.6;
+  color: var(--ash-color);
+  background-color: var(--white-color);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px; 
+  margin: 0 auto;    
+}
+
+
+
+
+/* Lists */
+ul, ol {
+  list-style: none;
+}
+
+li {
+ margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover{
+  color: var(--color-primary-dark);
+}
+
+h1{
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--white-color);
+  line-height: 1.2;
+  padding-bottom: 2rem;
+}
+h2{
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--dark-color);
+  line-height: 1.1;
+  padding-bottom: 1.5rem;
+}
+h4{
+  font-size: clamp(1.3rem, 4vw, 1.5rem);
+}
+h5{
+  font-size: 1.25rem;
+  color: var(--dark-color);
+  font-weight: 500;
+  margin-block: 0 -10px;
+}
+p{
+  padding-bottom: 2rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius);
+}
+section{
+  background: var(--white-color);
+  margin-block: 3rem;
+  padding-block: 3rem;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 0.8rem;
+  align-items: center;
+}
+.line{
+  width: 30px;
+  height: 2px;
+  margin-inline: .5rem;
+  background-color: var(--primery-color);
+}
+.m-xy-3{
+  margin-block: 3rem;
+}
+/* Buttons */
+.btn {
+  font-family: var(--font-family-base);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  background-color: var(--primery-color);
+  color: var(--white-color);
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+.dark-btn{
+ background-color: var(--dark-color);
+ color: var(--white-color);
+}
+
+.btn:hover,
+.dark-btn:hover {
+ box-shadow: var(--shadow);
+  color: var(--white-color);
+}
+
+
