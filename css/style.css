@@ -23,6 +23,9 @@ header .flex{
  font-weight: bold;
  padding: 0.5rem;
 }
+.logo a{
+    color: var(--white-color);
+}
 /* nav */
 .nav-links{
     display: flex;
@@ -592,4 +595,14 @@ display: block;
  .testimonial-cards .btn2.next {
         right: 30%;
       }
+}
+@media (max-width: 375px){
+.container {
+  width: 95%;
+  max-width: 400px;
+}
+.hero form.flex{
+    height: 55px
+}
+
 }
